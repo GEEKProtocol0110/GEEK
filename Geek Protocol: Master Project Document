@@ -1,0 +1,102 @@
+#2 Geek Protocol: Master Project Document
+*Last Updated: July 4, 2025*
+*Version: 1.1*
+
+### **1.0 Introduction & Vision**
+Geek Protocol is a Web3-based ecosystem for social learning and gaming, centered around a "Quiz2Earn" model. Our mission is to build the definitive decentralized platform where geeks can learn, compete, and monetize their expertise in a self-sustaining, community-driven economy.
+
+### **2.0 Core Gameplay & Features**
+The core of the platform is an engaging and competitive trivia experience.
+
+* **Primary Game Mode ("The Geek Gauntlet"):** A full game session consists of **10 rounds of 10 questions each** (100 questions total).
+* **Increasing Difficulty:** The challenge progresses through three tiers: Apprentice (Rounds 1-4), Adept (Rounds 5-7), and Master (Rounds 8-10).
+* **Strict Time Limit:** Each question has a 15-second timer to encourage quick recall and reward expertise.
+* **Power-Ups/Lifelines:** Players can earn or purchase strategic lifelines:
+    * **50/50:** Removes two incorrect answers.
+    * **Ask the Fandom:** Reveals what percentage of other players chose each answer.
+    * **Extra Time:** Adds 10 seconds to the timer.
+* **Daily Challenges:** A unique, themed gauntlet is featured each day with a larger prize pool to encourage daily participation.
+
+### **3.0 The In-Game Economy**
+A robust "meta-game" built around the core quiz loop to drive engagement and token utility.
+
+* **User Character Customization:** Each user has a personal avatar based on the "Giga" mascot. Avatars have customizable slots:
+    * Headwear
+    * Tops
+    * Handheld Item
+* **In-Game Store & Purchases:** A dedicated shop, hosted by the AI A.C.E., where users can spend `$GEEK` on 7 types of items:
+    1.  **Lifeline Packs** (Consumable)
+    2.  **Premium Quiz Packs** (Content)
+    3.  **"Hardcore Mode" Access Pass** (Content)
+    4.  **Avatar Frame Packs** (Cosmetic)
+    5.  **Custom Titles** (Cosmetic)
+    6.  **GEEK-Wear Apparel** (Customization)
+    7.  **Creator's Loot Box** (Randomized)
+* **Peer-to-Peer Marketplace:** A marketplace for users to buy and sell cosmetic and character customization items from each other using `$GEEK`. All transactions include a small platform fee that fuels the economic engine.
+
+### **4.0 $GEEK Tokenomics**
+The economic engine is designed for long-term growth and sustainability.
+
+* **Token Details:**
+    * **Name:** Geek Protocol
+    * **Ticker:** `$GEEK`
+    * **Blockchain:** Kaspa
+    * **Standard:** KRC-20
+* **Economic Engine (Burn & Recycle):** All platform fees (from the marketplace, in-game store, etc.) are subject to a **70/30 split** handled by the smart contract:
+    * **70% is Recycled** back into the player rewards pool.
+    * **30% is Permanently Burned**.
+* **Allocation & Release Schedule:**
+| Category | Allocation | Total Tokens | Release Plan |
+| :--- | :---: | :--- | :--- |
+| **Quiz2Earn Rewards** | 30% | 43.2 Billion | Released linearly over 5 years. |
+| **Staking Rewards** | 20% | 28.8 Billion | To be released starting in 2026. |
+| **Liquidity Fund** | 20% | 28.8 Billion | Reserved for CEX/DEX liquidity. |
+| **Team & Advisors** | 15% | 21.6 Billion | 1-year cliff, then 3-year linear vesting. |
+| **Marketing & Ecosystem** | 15% | 21.6 Billion | Used as needed for partnerships & grants. |
+
+
+### **5.0 Content & Community Strategy**
+Content is the lifeblood of the platform, sourced via a two-phased, community-centric strategy.
+
+* **Launch Categories:** The platform will launch with 8 primary categories:
+    1.  Sci-Fi Cinema & TV
+    2.  Fantasy Literature & Games
+    3.  Video Games
+    4.  Anime & Manga
+    5.  Comics & Superheroes
+    6.  Technology & Computing History
+    7.  Science & Futurism
+    8.  Tabletop & Board Games
+* **Premium Content:** Specialized categories like **"Blockchain History"** and **"Kaspa Ecosystem"** will be available as purchasable premium quiz packs.
+* **Community Content Engine:** A post-launch "Quiz Contributor Portal" will allow users to submit and peer-review new questions. Creators will be rewarded with `$GEEK` and a long-term passive revenue share for approved content.
+
+### **6.0 Brand & Character Guide**
+Geek Protocol utilizes a unique two-character strategy to create a rich brand identity.
+
+* **A.C.E. (Automated Cerebral Emulator) - The "Brains":** The in-game host and guide. A.C.E. is a sleek, holographic AI with a sharp, analytical, and data-driven personality.
+* **Giga - The "Face":** The official community mascot. Giga is a friendly, fun, and approachable robot character used in marketing, on social media, and as the base model for user avatars.
+
+### **7.0 Technical Architecture & Stack**
+The platform will be built on a modern, scalable, and robust technology stack.
+
+| Component | Technology | Purpose |
+| :--- | :--- | :--- |
+| **Frontend** | React, Tailwind CSS | Building the user interface. |
+| **Wallet Integration**| Ethers.js | Connecting to user wallets like Kaspium. |
+| **Backend** | Node.js on Heroku | Core application logic, API (for off-chain actions). |
+| **Database** | MongoDB Atlas | Primary database for users, quizzes. |
+| **Caching** | Heroku Redis | High-speed caching for leaderboards. |
+| **Blockchain** | Kaspa | Settlement layer for all transactions. |
+| **Smart Contracts**| KRC-20 Standard | On-chain logic for rewards, staking, marketplace, and burn/recycle mechanics. |
+| **SDK** | Rusty-Kaspa (via WASM)| Used by the backend for monitoring and by the frontend for wallet interaction. |
+| **Decentralized Storage**| IPFS with Pinata | Storing NFT metadata and quiz content. |
+
+
+### **8.0 Testing & Deployment Plan**
+A phased approach ensures a secure and stable launch.
+
+* **Phase 1: Testnet Validation:** All features will be rigorously tested on the **Kaspa TN10 testnet**. This includes deploying and testing all KRC-20 smart contracts (rewards, staking, marketplace), NFT minting, and the burn/recycle mechanics with testnet assets.
+* **Phase 2: Mainnet Deployment:** Following a comprehensive pre-launch checklist (including smart contract audits), the platform will be deployed:
+    * **Frontend:** Deployed to **Vercel** via a Git-based workflow.
+    * **Backend:** Deployed to **Heroku**, with the database on **MongoDB Atlas**.
+    * **Smart Contracts:** Deployed to the Kaspa mainnet.
