@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geek Protocol Litepaper</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0c0a1a;
+            --container-bg: rgba(20, 16, 40, 0.85);
+            --text-color: #dcdcdc;
+            --primary-neon: #00d1ff; /* Neon Blue */
+            --secondary-neon: #ff00e5; /* Neon Pink */
+            --accent-neon: #00ff95; /* Neon Green */
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: Arial, sans-serif;
+            line-height: 1.7;
+            margin: 0;
+            padding: 20px;
+            background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"%3E%3Cdefs%3E%3Cstyle%3E.dot%7Bfill:%231a1a3a;%7D%3C/style%3E%3C/defs%3E%3Ccircle class="dot" cx="10" cy="10" r="0.5"/%3E%3Ccircle class="dot" cx="30" cy="30" r="0.5"/%3E%3Ccircle class="dot" cx="50" cy="50" r="0.5"/%3E%3Ccircle class="dot" cx="70" cy="70" r="0.5"/%3E%3Ccircle class="dot" cx="90" cy="90" r="0.5"/%3E%3C/svg%3E');
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 40px;
+            background-color: var(--container-bg);
+            border: 1px solid var(--primary-neon);
+            box-shadow: 0 0 25px rgba(0, 209, 255, 0.3);
+            border-radius: 8px;
+            backdrop-filter: blur(10px);
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Orbitron', sans-serif;
+            color: var(--primary-neon);
+            text-shadow: 0 0 5px rgba(0, 209, 255, 0.5);
+            margin-top: 1.5em;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+            border-bottom: 2px solid var(--secondary-neon);
+            padding-bottom: 15px;
+        }
+        h2 { font-size: 2em; border-bottom: 1px solid var(--secondary-neon); padding-bottom: 10px; }
+        h3 { font-size: 1.5em; color: var(--accent-neon); border-bottom: 1px dashed var(--accent-neon); }
+        h4 { font-size: 1.2em; color: var(--secondary-neon); border-bottom: none; }
+
+        p, li { font-size: 1.1em; }
+        strong { color: #fff; }
+        ul { padding-left: 20px; list-style: square; }
+        a { color: var(--secondary-neon); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            font-size: 1em;
+            background-color: rgba(0,0,0,0.2);
+        }
+        th, td {
+            border: 1px solid var(--accent-neon);
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: rgba(0, 255, 149, 0.1);
+            font-family: 'Press Start 2P', cursive;
+            font-size: 0.8em;
+            color: var(--accent-neon);
+        }
+        .footer { text-align: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid var(--primary-neon); font-size: .9em; color: #aaa; }
+
+        /* Print-friendly styles */
+        @media print {
+            body { background-color: #fff; color: #000; font-family: "Times New Roman", Times, serif; }
+            .container { margin: 0; padding: 0; border: none; box-shadow: none; }
+            h1, h2, h3, h4, strong, a { color: #000 !important; text-shadow: none; }
+            p, li { color: #000 !important; }
+            a { text-decoration: underline; }
+            table, th, td { border: 1px solid #ddd; }
+            th { background-color: #f2f2f2; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>The Geek Protocol Litepaper</h1>
+        <p style="text-align: center;"><em>Version 1.2 | July 11, 2025</em></p>
+
+        <h2>1.0 The Vision: What is Geek Protocol?</h2>
+        <p>In the digital universe, knowledge is power. Geek Protocol is a decentralized Web3 ecosystem built on the high-speed Kaspa network, designed for a single purpose: to create a home where geeks can learn, compete, and monetize their expertise.</p>
+        <p>More than just a quiz, Geek Protocol is a fully gamified world. Progress on your "Geek's Journey," complete daily challenges, unlock achievements, and fill your collectible sticker albums. This is a living ecosystem designed for long-term engagement, hosted by our unique AI, A.C.E.</p>
+        <p>Welcome to the future of fandom.</p>
+
+        <h2>2.0 The Ecosystem</h2>
+        <h4>2.1 The Geek Gauntlet & Daily Challenges</h4>
+        <p>The heart of our platform is the "Geek Gauntlet," a 100-question trivia challenge. The experience is designed for high-stakes drama and endless replayability, with strict time limits, increasing difficulty, and strategic lifelines. On top of this, a fresh set of <strong>Daily, Weekly, & Monthly Challenges</strong> provide a constant stream of new goals and `$GEEK` rewards.</p>
+
+        <h4>2.2 Top-Tier Gamification</h4>
+        <ul>
+            <li><strong>The Geek's Journey:</strong> Level up your account by earning XP from every activity on the platform, unlocking rewards as you progress along a visual map.</li>
+            <li><strong>Achievements & NFT Badges:</strong> Unlock hundreds of achievements, from "First Steps" to "Master of Sci-Fi," earning permanent, non-tradable NFT badges to display your expertise.</li>
+            <li><strong>Collectible Sets:</strong> Complete sets of digital "stickers" for each quiz category. Finish a set to earn huge `$GEEK` prizes and exclusive avatar gear. Trade your duplicates on the marketplace!</li>
+        </ul>
+
+        <h4>2.3 Create & Customize: Your Geek Identity</h4>
+        <ul>
+            <li><strong>Customizable Avatars:</strong> Every user gets a "Giga" bot avatar to customize with unique apparel and accessories.</li>
+            <li><strong>Peer-to-Peer Marketplace:</strong> Buy and sell cosmetic items and collectibles with other community members in a fully on-chain marketplace.</li>
+        </ul>
+
+        <h2>3.0 The $GEEK Token</h2>
+        <h4>3.1 Token Details</h4>
+        <table>
+             <thead><tr><th>Attribute</th><th>Details</th></tr></thead>
+             <tbody>
+                <tr><td><strong>Name</strong></td><td>Geek Protocol</td></tr>
+                <tr><td><strong>Ticker</strong></td><td>`$GEEK`</td></tr>
+                <tr><td><strong>Blockchain</strong></td><td>Kaspa</td></tr>
+                <tr><td><strong>Standard</strong></td><td>KRC-20</td></tr>
+             </tbody>
+        </table>
+
+        <h4>3.2 Core Utility</h4>
+        <ul>
+            <li><strong>Earn:</strong> Receive `$GEEK` as rewards for winning quizzes.</li>
+            <li><strong>Spend:</strong> Purchase in-game items, avatar cosmetics, and premium content.</li>
+            <li><strong>Trade:</strong> Use `$GEEK` as the primary currency on the on-chain marketplace.</li>
+            <li><strong>Enter:</strong> Pay entry fees for special, high-stakes tournaments.</li>
+            <li><strong>Stake:</strong> Lock your `$GEEK` to earn rewards and boost future earnings.</li>
+        </ul>
+        
+        <h4>3.3 Tokenomics & Allocation</h4>
+        <p><strong>Total Supply:</strong> 144,000,000,000 GEEK</p>
+        <table>
+            <thead><tr><th>Category</th><th>Allocation</th></tr></thead>
+            <tbody>
+                <tr><td>Quiz2Earn Rewards</td><td>30%</td></tr>
+                <tr><td>Staking Rewards</td><td>20%</td></tr>
+                <tr><td>Liquidity Fund</td><td>20%</td></tr>
+                <tr><td>Team & Advisors</td><td>15%</td></tr>
+                <tr><td>Marketing & Ecosystem</td><td>15%</td></tr>
+            </tbody>
+        </table>
+
+        <h2>4.0 Our Characters: A.C.E. & Giga</h2>
+        <p>The Geek Protocol is hosted by two unique personalities who create an immersive experience.</p>
+        <ul>
+            <li><strong>A.C.E. (Automated Cerebral Emulator):</strong> The "brains" of the operation. A sleek, holographic AI who hosts the quizzes and provides data-driven insights.</li>
+            <li><strong>Giga:</strong> The "face" of the brand. A friendly, golden robot mascot who welcomes new users and represents the community.</li>
+        </ul>
+
+        <h2>5.0 Roadmap</h2>
+        <ul>
+            <li><strong>Q3 2025:</strong> Foundation & Community Launch</li>
+            <li><strong>Q4 2025:</strong> Testnet MVP Launch</li>
+            <li><strong>Q1 2026:</strong> Mainnet Launch & Feature Expansion</li>
+            <li><strong>Q2 2026:</strong> Decentralization (DAO & Community Content Engine)</li>
+        </ul>
+
+        <h2>6.0 Join the Protocol</h2>
+        <ul>
+            <li><strong>X (Twitter):</strong> <a href="https://x.com/geekonkas">https://x.com/geekonkas</a></li>
+            <li><strong>Telegram:</strong> <a href="https://t.me/GEEKonKAScommunity">https://t.me/GEEKonKAScommunity</a></li>
+            <li><strong>Token Info:</strong> <a href="https://kas.fyi/token/krc20/GEEK">https://kas.fyi/token/krc20/GEEK</a></li>
+            <li><strong>Marketplace:</strong> <a href="https://kaspa.com/tokens/marketplace/token/GEEK">https://kaspa.com/tokens/marketplace/token/GEEK</a></li>
+        </ul>
+
+        <div class="footer">
+            <p>© 2025 Geek Protocol. All hope, no hype.</p>
+        </div>
+    </div>
+</body>
+</html>
